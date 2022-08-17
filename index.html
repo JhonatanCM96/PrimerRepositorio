@@ -1,0 +1,144 @@
+<!DOCTYPE html> <!--Un atajo para crear un DOCTYPE es escrbiendo: ! despues ENTER y se autocompleta-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--************************************************************************************************************-->
+
+    <!--Tambien se puede poner dentro de href="" el nombre de otra pagina .html que se encuentre dentro de la misma carpeta-->
+    <p>* Ir a Google en la misma pestaña</p>
+    <a href="https://www.google.com/">Ir a Google</a>
+
+    <p>* Ir a Google en otra pestaña</p>
+    <a href="https://www.google.com/" target="_blank">Ir a Google</a><br>
+
+    <!--Como colocar una imagen como un enlace-->
+
+    <a title="logo" href="file:///C:/Users/Dell/Desktop/Repaso%20HTML/index.html" target="_blank"><img src="logo.png" width="100"/></a>
+
+    <!--************************************************************************************************************-->
+
+    <p>* Colocar el cursor encima para mas informacion: 
+        <abbr title="Se usa para hacer una abreviacion"> etiqueta 'abbr'</abbr>
+    </p>
+
+    <!--************************************************************************************************************-->
+
+    <address>
+        <!--Esto se usa para crear un footer o simplemente para crear una direccion correctamente-->
+        * Escrito por Jhonatan Cadavid <br>
+        visitame en: <br>
+        www.********.com <br>
+        Medellin-Colombia
+    </address>
+
+    <!--************************************************************************************************************-->
+
+    <article>
+        <h1> * Titulo 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur illum</p>
+    </article>
+
+    <!--************************************************************************************************************-->
+
+    <audio controls autoplay src="Bandolero.mp3"></audio>
+
+    <!--Version detallada:-->
+
+    <audio controls loop autoplay muted> <!--No me sirve el autoplay :( -->
+        <source src="Bandolero.mp3">
+        El navegador no puede reproducir este audio
+    </audio>
+    
+    <!--************************************************************************************************************-->
+
+    <blockquote>Esto sirve para poner una sangria al principio y citar algun texto de algun autor</blockquote>
+    <cite>Esto sirve para colocar el nombre del autor en cursiva</cite>
+
+    <!--************************************************************************************************************-->
+
+    <table border="1">
+        <caption><b>Titulo de la tabla</b></caption>
+        <tr>
+            <th>Dia</th>
+            <th>Mes</th>
+            <th>Año</th>
+        </tr>
+        <tr>
+            <th>19</th>
+            <th>Abril</th>
+            <th>1996</th>
+        </tr>
+        <tr>
+            <th>12</th>
+            <th>Septiembre</th>
+            <th>1998</th>
+        </tr>
+
+        <!--Cambiarle el color a las columnas de las tablas-->
+        <colgroup>
+            <col style="background-color: #0CF90C">
+            <col span="2" style="background-color: 	#FFFF00">
+            
+        </colgroup>
+    </table>
+
+    <!--************************************************************************************************************-->
+
+    <p>&lt;asi se puede poner el mayor y menor en html&gt;</p>
+    <code>&lt;un tipo de letra de codigo&gt;</code>
+    <code>&lt;title&gt;</code>
+
+    <!--************************************************************************************************************-->
+
+    <!--Input de Busqueda-->
+    <form method = "get"> <!--Forma no segura-->
+        <input type = "text" name = "id" placeholder = "Escribe tu busqueda"/>
+        <input type = "submit" value = "ENVIAR"/>
+    </form>
+    <br>
+    <form method = "post"> <!--Forma segura-->
+        <input type = "text" name = "id" placeholder = "Escribe tu busqueda"/>
+        <input type = "submit" value = "ENVIAR"/>
+    </form>
+
+    <!--Input de lista-->
+
+    <input list="Colores">
+    <datalist id="Colores" type="submit" value="Buscar">
+        <option value="Amarillo"></option>
+        <option value="Azul"></option>
+        <option value="Rojo"></option>
+        <option value="Negro"></option>
+        <option value="Blanco"></option>
+    </datalist>
+
+    <!--************************************************************************************************************-->
+
+    <!--Lista de descripcion-->
+
+    <dl>
+        <dt>Titulo</dt>
+        <dd>Descripcion del articulo</dd> <!--Agrega una sangria-->
+        <dt>Titulo 2</dt>
+        <dd>Descripcion del articulo 2</dd>
+    </dl>
+
+    <!--************************************************************************************************************-->
+
+    <!--Insertar video de yotube--><!--No sirve :(-->
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/saGYMhApaH8" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
